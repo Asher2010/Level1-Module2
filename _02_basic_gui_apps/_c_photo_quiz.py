@@ -24,21 +24,22 @@ def create_image(filename, width, height):
 #  to use those)
 
 # TODO 1) Create a new tkinter class
+class SecondApp(tk.Tk):
 
     # TODO 2) Create a constructor
-
+    def __init__(self):
         # TODO 3) call Tk's constructor
-
+        super.__init__()
         # TODO 4) Create a member variable for a label and place it.
         #  You do not need to add any text or images to the label.
 
 
 # TODO 5) Create an if __name__ == '__main__': block
-
+if __name__ == '__main__':
     # TODO 6) Create an object of the tkinter class
-
+    tk = SecondApp()
     # TODO 7) Set the app window width and height using geometry()
-
+    tk.geometry("500x500")
     # TODO 8) Declare and initialize a score variable
 
     # TODO 9) Create an image object variable using the create_image function

@@ -25,7 +25,7 @@ class Animal:
 class Duck(Animal):
     # Static variables go here. They can be used using the class name,
     # Duck.num_ducks_created
-    num_ducks_created = 0
+    num_ducks_created = 2
 
     # This is a constructor! It's called when an object of this class
     # is created. The 'self' variable is always the first input parameter
@@ -38,23 +38,30 @@ class Duck(Animal):
         # the constructor
         self.new_instance_variable = 'A new instance variable!'
         self.name = name
-
+        self.color = 'blue'
+        self.age = '2'
         # This is a local variable and can only be used in the constructor
         new_local_variable = 'A new local variable!'
 
         # Calling a method also begins with '.self'
         self.initialize()
-
+        self.quack()
+        self.waddle()
     # This is a method!
     def initialize(self):
         # The instance variable can be used throughout the class
         print(self.name + ' the Duck was created!')
-
+    def quack(self):
+        pass
+    def waddle(self):
+        pass
 
 if __name__ == '__main__':
     # TODO 1) Create an object of the Duck class, for example
     #  kenny = Duck('Kenny')
-
+    kenny = Duck('Kenny')
+    linus = Duck('linus')
+    sasha = Duck('sasha')
     # TODO 2) Add 2 more input variables into the Duck constructor
 
     # TODO 3) Create 2 instance variables in the Duck class
