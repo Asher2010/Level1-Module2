@@ -8,7 +8,7 @@ from PIL import Image, ImageTk
 
 def create_image(filename, width, height):
     image_obj = None
-
+#
     try:
         image = Image.open(filename)
         image = image.resize((width, height), Image.ANTIALIAS)

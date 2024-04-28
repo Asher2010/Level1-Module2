@@ -16,7 +16,7 @@ class ThirdApp(tk.Tk):
     def __init__(self):
 
         super().__init__()
-    # TODO 3) call Tk's constructor,
+    # TODO 3) call Tk's constructor,c
 
     # TODO 4) Create 2 buttons next to each other, side by side, with the
     #  text "Click me!". Make sure the buttons are member variables and
